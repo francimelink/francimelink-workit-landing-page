@@ -6,6 +6,12 @@
   font-family: "Manrope";
   src: url("./assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("woff2"); }
 /* TODO - declare variables */
+/* UNIVESRAL SELECTOR*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 /* Reset CSS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -135,8 +141,88 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  min-height: 100vh; }
+
+h1,
+h2,
+h3 {
+  font-family: Fraunces, sans-serif; }
+
+p {
+  font-family: Manrope, sans-serif; }
+
+/*HEADER*/
+header h1 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center; }
+
+/*MAIN*/
+main h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center; }
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center; }
+main h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center; }
+
 /* Decalre breakpints */
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /*HEADER*/
+  header h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px; }
+
+  /*MAIN*/
+  main h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left; }
+  main p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left; }
+  main h2 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: left; } }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /*HEADER*/
+  header h1 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 80px; }
+
+  /*MAIN*/
+  main h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center; }
+  main p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */

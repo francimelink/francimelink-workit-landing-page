@@ -11,6 +11,15 @@
 }
 
 /* TODO - declare variables */
+$heading-fonts: Fraunces, sans-serif;
+$body-fonts: Manrope, sans-serif;
+
+/* UNIVESRAL SELECTOR*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /* Reset CSS */
 
@@ -150,11 +159,129 @@ table {
     border-spacing: 0;
 }
 
+body {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $heading-fonts;
+}
+
+p {
+    font-family: $body-fonts;
+}
+
+/*HEADER*/
+header {
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 50px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+
+/*MAIN*/
+main {
+    h3 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+}
+
+
 /* Decalre breakpints */
 
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+    /*HEADER*/
+    header {
+        h1 {
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 60px;
+        }
+    }
+
+    /*MAIN*/
+    main {
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 64px;
+            text-align: left;
+
+        }
+    }
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+    /*HEADER*/
+    header {
+        h1 {
+            font-size: 80px;
+            font-weight: 600;
+            line-height: 80px;
+        }
+    }
+
+    /*MAIN*/
+    main {
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            text-align: center;
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+        }
+    }
+
+}
