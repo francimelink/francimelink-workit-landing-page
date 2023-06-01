@@ -13,6 +13,7 @@
 /* TODO - declare variables */
 $heading-fonts: Fraunces, sans-serif;
 $body-fonts: Manrope, sans-serif;
+$primary-color: #24053E;
 
 /* UNIVESRAL SELECTOR*/
 * {
@@ -175,12 +176,58 @@ p {
 
 /*HEADER*/
 header {
-    h1 {
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 50px;
-        letter-spacing: 0px;
-        text-align: center;
+    background-color: $primary-color;
+    text-align: center;
+    padding: 32px 16px 0 16px;
+
+    nav {
+        display: flex;
+        font-family: Manrope;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.1599999964237213px;
+            text-align: left;
+            color: white;
+            border-bottom: 3px solid #44FFA1;
+        }
+    }
+
+    .header__jumbotron {
+        h1 {
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 50px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+
+            span {
+                border-bottom: 3px solid #44FFA1;
+            }
+        }
+
+        button {
+            background-color: #44FFA1;
+            color: $primary-color;
+            font-family: $body-fonts;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -0.1599999964237213px;
+            text-align: center;
+            border: none;
+            padding: 12px 24px;
+
+        }
     }
 }
 
@@ -219,10 +266,18 @@ main {
 
     /*HEADER*/
     header {
-        h1 {
-            font-size: 60px;
-            font-weight: 600;
-            line-height: 60px;
+        padding: 32px 40px 0 40px;
+
+        .header__jumbotron {
+            h1 {
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 60px;
+            }
+        }
+
+        nav {
+            margin-bottom: 56px;
         }
     }
 
@@ -259,10 +314,12 @@ main {
 
     /*HEADER*/
     header {
-        h1 {
-            font-size: 80px;
-            font-weight: 600;
-            line-height: 80px;
+        .header__jumbotron {
+            h1 {
+                font-size: 80px;
+                font-weight: 600;
+                line-height: 80px;
+            }
         }
     }
 
