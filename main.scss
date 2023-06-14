@@ -162,6 +162,8 @@ table {
 
 body {
     min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 h1,
@@ -184,8 +186,21 @@ p {
 header {
     background-color: $primary-color;
     text-align: center;
-    padding: 32px 16px 156px 16px;
-    max-height: 730px;
+    padding: 32px 16px 0 16px;
+    position: relative;
+
+    &::after {
+        border-radius: 100%;
+        background: transparent;
+        content: '';
+        width: 200%;
+        display: block;
+        height: 80px;
+        background-color: $primary-color;
+        position: absolute;
+        bottom: -70px;
+        left: -100%;
+    }
 
     nav {
         display: flex;
@@ -216,10 +231,14 @@ header {
         max-width: 635px;
         margin: 0 auto;
 
+        div {
+            margin-bottom: 64px;
+        }
+
         h1 {
             font-size: 50px;
             font-weight: 600;
-            line-height: 50px;
+            line-height: 60px;
             letter-spacing: 0px;
             text-align: center;
             color: white;
@@ -243,7 +262,22 @@ header {
             padding: 12px 24px;
 
         }
+
+        img {
+            width: 100%;
+
+        }
     }
+
+    picture {
+        width: 100%;
+        position: absolute;
+
+        img {
+            width: 100%;
+        }
+    }
+
 }
 
 /*MAIN*/
@@ -281,7 +315,11 @@ main {
 
     /*HEADER*/
     header {
-        padding: 32px 0 156px 0;
+        padding-top: 32px;
+        background: left -150px top 50% / 50% no-repeat url("./assets/images/bg-pattern-1.svg"),
+            right -50px bottom 5% / 15% 60% no-repeat url("./assets/images/bg-pattern-2.svg");
+        background-color: $primary-color;
+
 
         .header__jumbotron {
             padding: 0 80px;
@@ -328,11 +366,15 @@ main {
 
     /*HEADER*/
     header {
+        nav {
+            max-width: 970px;
+        }
+
         .header__jumbotron {
             h1 {
                 font-size: 80px;
                 font-weight: 600;
-                line-height: 80px;
+                line-height: 90px;
             }
         }
     }
